@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ThirdPersonToyPrj.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{7E6365A1-F237-4B11-9CE4-84D8967210B6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ThirdPersonToyPrj.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ThirdPersonToyPrjEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{9DBDE9D9-B6B9-413C-A2B7-CC7F7E2E399E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ThirdPersonToyPrj">
+      <UniqueIdentifier>{D5A35026-8E41-48C0-980A-E2B0F792C8B7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ThirdPersonToyPrj\ThirdCharacter.cpp">
+      <Filter>Source\ThirdPersonToyPrj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThirdPersonToyPrj\ThirdCharacter.h">
+      <Filter>Source\ThirdPersonToyPrj</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\ThirdPersonToyPrj\ThirdPersonToyPrj.Build.cs">
+      <Filter>Source\ThirdPersonToyPrj</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ThirdPersonToyPrj\ThirdPersonToyPrj.cpp">
+      <Filter>Source\ThirdPersonToyPrj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThirdPersonToyPrj\ThirdPersonToyPrj.h">
+      <Filter>Source\ThirdPersonToyPrj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThirdPersonToyPrj\ThirdPersonToyPrjGameModeBase.cpp">
+      <Filter>Source\ThirdPersonToyPrj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThirdPersonToyPrj\ThirdPersonToyPrjGameModeBase.h">
+      <Filter>Source\ThirdPersonToyPrj</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

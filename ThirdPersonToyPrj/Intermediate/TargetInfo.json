@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ThirdPersonToyPrj",
+			"Path": "E:\\Unreal Projects\\ThirdPersonToyPrj\\Source\\ThirdPersonToyPrj.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ThirdPersonToyPrjEditor",
+			"Path": "E:\\Unreal Projects\\ThirdPersonToyPrj\\Source\\ThirdPersonToyPrjEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
