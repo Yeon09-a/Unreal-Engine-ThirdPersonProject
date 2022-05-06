@@ -14,8 +14,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define THIRDPERSONTOYPRJ_ThirdCharacter_generated_h
 
 #define ThirdPersonToyPrj_Source_ThirdPersonToyPrj_ThirdCharacter_h_12_SPARSE_DATA
-#define ThirdPersonToyPrj_Source_ThirdPersonToyPrj_ThirdCharacter_h_12_RPC_WRAPPERS
-#define ThirdPersonToyPrj_Source_ThirdPersonToyPrj_ThirdCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define ThirdPersonToyPrj_Source_ThirdPersonToyPrj_ThirdCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execStopJump); \
+	DECLARE_FUNCTION(execStartJump); \
+	DECLARE_FUNCTION(execMoveRight); \
+	DECLARE_FUNCTION(execMoveForward);
+
+
+#define ThirdPersonToyPrj_Source_ThirdPersonToyPrj_ThirdCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execStopJump); \
+	DECLARE_FUNCTION(execStartJump); \
+	DECLARE_FUNCTION(execMoveRight); \
+	DECLARE_FUNCTION(execMoveForward);
+
+
 #define ThirdPersonToyPrj_Source_ThirdPersonToyPrj_ThirdCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAThirdCharacter(); \

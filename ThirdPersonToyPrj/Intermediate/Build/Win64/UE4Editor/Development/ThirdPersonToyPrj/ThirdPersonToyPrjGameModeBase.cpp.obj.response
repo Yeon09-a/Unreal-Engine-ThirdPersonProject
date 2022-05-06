@@ -230,8 +230,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Inc\ThirdPersonToyPrj"
-/I "E:\Unreal Projects\ThirdPersonToyPrj\Source"
+/I E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Inc\ThirdPersonToyPrj
+/I E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Source
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -261,12 +261,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"E:\Unreal Projects\ThirdPersonToyPrj\Source\ThirdPersonToyPrj\ThirdPersonToyPrjGameModeBase.cpp"
-/FI"E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\Definitions.ThirdPersonToyPrj.h"
-/Fo"E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\ThirdPersonToyPrjGameModeBase.cpp.obj"
+/FI"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Source\ThirdPersonToyPrj\ThirdPersonToyPrjGameModeBase.cpp"
+/FI"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\Definitions.ThirdPersonToyPrj.h"
+/Fo"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\ThirdPersonToyPrjGameModeBase.cpp.obj"
 /TP
 /GR-
 /W4

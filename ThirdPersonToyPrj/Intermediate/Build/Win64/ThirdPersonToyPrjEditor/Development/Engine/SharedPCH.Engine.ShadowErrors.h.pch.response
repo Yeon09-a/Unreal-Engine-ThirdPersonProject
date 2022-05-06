@@ -259,11 +259,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/I "E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine"
-/Yc"E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
-/Fo"E:\Unreal Projects\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+/I E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine
+/Yc"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
+/Fo"E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 /TP
 /GR-
 /W4

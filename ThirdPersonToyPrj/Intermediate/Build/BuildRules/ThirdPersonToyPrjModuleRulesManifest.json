@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"E:\\Unreal Projects\\ThirdPersonToyPrj\\Source\\ThirdPersonToyPrj\\ThirdPersonToyPrj.Build.cs",
-		"E:\\Unreal Projects\\ThirdPersonToyPrj\\Source\\ThirdPersonToyPrj.Target.cs",
-		"E:\\Unreal Projects\\ThirdPersonToyPrj\\Source\\ThirdPersonToyPrjEditor.Target.cs"
+		"E:\\GitHub\\Unreal-Engine-ThirdPersonProject\\ThirdPersonToyPrj\\Source\\ThirdPersonToyPrj\\ThirdPersonToyPrj.Build.cs",
+		"E:\\GitHub\\Unreal-Engine-ThirdPersonProject\\ThirdPersonToyPrj\\Source\\ThirdPersonToyPrj.Target.cs",
+		"E:\\GitHub\\Unreal-Engine-ThirdPersonProject\\ThirdPersonToyPrj\\Source\\ThirdPersonToyPrjEditor.Target.cs"
 	],
 	"EngineVersion": "4.26.2"
 }

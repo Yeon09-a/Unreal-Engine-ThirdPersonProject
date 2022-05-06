@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeThirdPersonToyPrj_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xFD72626E,
+				0x86C3970D,
 				0x1FB739E0,
 				METADATA_PARAMS(nullptr, 0)
 			};
