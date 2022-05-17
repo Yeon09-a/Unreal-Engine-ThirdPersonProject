@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 	THIRDPERSONTOYPRJ_API UClass* Z_Construct_UClass_AThirdCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_ThirdPersonToyPrj();
+	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AThirdCharacter::execStopJump)
 	{
@@ -184,6 +186,15 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpringArm_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SpringArm;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ThirdCameraComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ThirdCameraComponent;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -204,6 +215,30 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 		{ "ModuleRelativePath", "ThirdCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AThirdCharacter_Statics::NewProp_SpringArm_MetaData[] = {
+		{ "Category", "camera" },
+		{ "Comment", "// \xc4\xab?\xde\xb6? ??????\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ThirdCharacter.h" },
+		{ "ToolTip", "\xc4\xab?\xde\xb6? ??????" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AThirdCharacter_Statics::NewProp_SpringArm = { "SpringArm", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AThirdCharacter, SpringArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AThirdCharacter_Statics::NewProp_SpringArm_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AThirdCharacter_Statics::NewProp_SpringArm_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AThirdCharacter_Statics::NewProp_ThirdCameraComponent_MetaData[] = {
+		{ "Category", "camera" },
+		{ "Comment", "// \xc4\xab?\xde\xb6?\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ThirdCharacter.h" },
+		{ "ToolTip", "\xc4\xab?\xde\xb6?" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AThirdCharacter_Statics::NewProp_ThirdCameraComponent = { "ThirdCameraComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AThirdCharacter, ThirdCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AThirdCharacter_Statics::NewProp_ThirdCameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AThirdCharacter_Statics::NewProp_ThirdCameraComponent_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AThirdCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThirdCharacter_Statics::NewProp_SpringArm,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThirdCharacter_Statics::NewProp_ThirdCameraComponent,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AThirdCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AThirdCharacter>::IsAbstract,
 	};
@@ -213,11 +248,11 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		nullptr,
+		Z_Construct_UClass_AThirdCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AThirdCharacter_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AThirdCharacter_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AThirdCharacter_Statics::Class_MetaDataParams))
@@ -231,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AThirdCharacter, 3018040839);
+	IMPLEMENT_CLASS(AThirdCharacter, 4060464697);
 	template<> THIRDPERSONTOYPRJ_API UClass* StaticClass<AThirdCharacter>()
 	{
 		return AThirdCharacter::StaticClass();
