@@ -2,13 +2,30 @@
 
 
 #include "ThirdCharacter.h"
+#include "GameFrameWork/SpringArmComponent.h"
+#include "Camera/CameraComponent.h"
+#include "GameFrameWork/CharacterMovementComponent.h"
+
 
 // Sets default values
 AThirdCharacter::AThirdCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	//PrimaryActorTick.bCanEverTick = true;
 
+	// 카메라 지지대
+	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
+	SpringArm->SetupAttachment(RootComponent); // CameraBoom을 맨 중심에 붙임, CameraBoom을 RootComponent의 하위(자식) 컴포넌트로 함.
+	SpringArm->bUsePawnControlRotation = true; // 회전 값(컨트롤러를 중심으로 한 로테이터 값)
+	
+	// 3인칭 카메라 컴포넌트 생성
+	ThirdCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("ThirdPersonCamera"));
+	// 카메라 컴포넌트를 캡슐 컴포넌트에 붙임.
+	ThirdCameraComponent->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
+	// 폰의 카메라 로테이션 제어를 불허.
+	ThirdCameraComponent->bUsePawnControlRotation = false;
+
+	GetCharacterMovement()->bOrientRotationToMovement = true;
 }
 
 // Called when the game starts or when spawned
@@ -36,7 +53,6 @@ void AThirdCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 	// look 바인딩 구성
 	PlayerInputComponent->BindAxis("Turn", this, &AThirdCharacter::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("LookUp", this, &AThirdCharacter::AddControllerPitchInput);
 
 	// action 바인딩 구성
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AThirdCharacter::StartJump);
@@ -53,8 +69,9 @@ void AThirdCharacter::MoveForward(float Value)
 void AThirdCharacter::MoveRight(float Value)
 {
 	// 어느 쪽이 오른쪽인지 알아내어, 플레이어가 그 방향으로 이동하고자 한다고 기록
-	FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::Y);
+	FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::Y); // 절대축 기준 회전값
 	AddMovementInput(Direction, Value);
+
 }
 
 void AThirdCharacter::StartJump()

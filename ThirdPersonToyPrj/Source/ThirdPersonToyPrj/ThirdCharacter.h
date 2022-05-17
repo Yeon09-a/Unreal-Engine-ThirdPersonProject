@@ -41,4 +41,12 @@ public:
 	// 점프 끝, 점프 플래그 삭제
 	UFUNCTION()
 	void StopJump();
+
+	// 카메라 지지대
+	UPROPERTY(EditAnywhere, Category = camera)
+	class USpringArmComponent* SpringArm;
+
+	// 카메라
+	UPROPERTY(VisibleAnywhere, Category = camera)
+	class UCameraComponent* ThirdCameraComponent;
 };
