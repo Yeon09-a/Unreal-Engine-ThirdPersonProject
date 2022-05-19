@@ -16,6 +16,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define ThirdPersonToyPrj_Source_ThirdPersonToyPrj_ThirdCharacter_h_12_SPARSE_DATA
 #define ThirdPersonToyPrj_Source_ThirdPersonToyPrj_ThirdCharacter_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execStopCrouch); \
+	DECLARE_FUNCTION(execDoCrouch); \
+	DECLARE_FUNCTION(execStopRun); \
+	DECLARE_FUNCTION(execRun); \
 	DECLARE_FUNCTION(execStopJump); \
 	DECLARE_FUNCTION(execStartJump); \
 	DECLARE_FUNCTION(execMoveRight); \
@@ -24,6 +28,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define ThirdPersonToyPrj_Source_ThirdPersonToyPrj_ThirdCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execStopCrouch); \
+	DECLARE_FUNCTION(execDoCrouch); \
+	DECLARE_FUNCTION(execStopRun); \
+	DECLARE_FUNCTION(execRun); \
 	DECLARE_FUNCTION(execStopJump); \
 	DECLARE_FUNCTION(execStartJump); \
 	DECLARE_FUNCTION(execMoveRight); \

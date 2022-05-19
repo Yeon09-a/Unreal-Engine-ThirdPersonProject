@@ -20,6 +20,34 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AThirdCharacter::execStopCrouch)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->StopCrouch();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AThirdCharacter::execDoCrouch)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DoCrouch();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AThirdCharacter::execStopRun)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->StopRun();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AThirdCharacter::execRun)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Run();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AThirdCharacter::execStopJump)
 	{
 		P_FINISH;
@@ -54,12 +82,40 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 	{
 		UClass* Class = AThirdCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "DoCrouch", &AThirdCharacter::execDoCrouch },
 			{ "MoveForward", &AThirdCharacter::execMoveForward },
 			{ "MoveRight", &AThirdCharacter::execMoveRight },
+			{ "Run", &AThirdCharacter::execRun },
 			{ "StartJump", &AThirdCharacter::execStartJump },
+			{ "StopCrouch", &AThirdCharacter::execStopCrouch },
 			{ "StopJump", &AThirdCharacter::execStopJump },
+			{ "StopRun", &AThirdCharacter::execStopRun },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AThirdCharacter_DoCrouch_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AThirdCharacter_DoCrouch_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// ?\xc9\xb1?\n" },
+		{ "ModuleRelativePath", "ThirdCharacter.h" },
+		{ "ToolTip", "?\xc9\xb1?" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AThirdCharacter_DoCrouch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AThirdCharacter, nullptr, "DoCrouch", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AThirdCharacter_DoCrouch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AThirdCharacter_DoCrouch_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AThirdCharacter_DoCrouch()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AThirdCharacter_DoCrouch_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AThirdCharacter_MoveForward_Statics
 	{
@@ -129,6 +185,30 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AThirdCharacter_Run_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AThirdCharacter_Run_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// ?\xde\xb8??? ?\xd3\xb5? ?\xc3\xb8???\n" },
+		{ "ModuleRelativePath", "ThirdCharacter.h" },
+		{ "ToolTip", "?\xde\xb8??? ?\xd3\xb5? ?\xc3\xb8???" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AThirdCharacter_Run_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AThirdCharacter, nullptr, "Run", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AThirdCharacter_Run_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AThirdCharacter_Run_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AThirdCharacter_Run()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AThirdCharacter_Run_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AThirdCharacter_StartJump_Statics
 	{
 #if WITH_METADATA
@@ -152,6 +232,30 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AThirdCharacter_StopCrouch_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AThirdCharacter_StopCrouch_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// ???? ???? ???\xee\xb3\xaa??(?\xcf\xbe\xee\xb3\xaa??)\n" },
+		{ "ModuleRelativePath", "ThirdCharacter.h" },
+		{ "ToolTip", "???? ???? ???\xee\xb3\xaa??(?\xcf\xbe\xee\xb3\xaa??)" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AThirdCharacter_StopCrouch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AThirdCharacter, nullptr, "StopCrouch", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AThirdCharacter_StopCrouch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AThirdCharacter_StopCrouch_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AThirdCharacter_StopCrouch()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AThirdCharacter_StopCrouch_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AThirdCharacter_StopJump_Statics
 	{
 #if WITH_METADATA
@@ -172,6 +276,30 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AThirdCharacter_StopJump_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AThirdCharacter_StopRun_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AThirdCharacter_StopRun_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// ?\xde\xb8??? ?\xd3\xb5? ???????? ?\xd9\xb2\xd9\xb1?\n" },
+		{ "ModuleRelativePath", "ThirdCharacter.h" },
+		{ "ToolTip", "?\xde\xb8??? ?\xd3\xb5? ???????? ?\xd9\xb2\xd9\xb1?" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AThirdCharacter_StopRun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AThirdCharacter, nullptr, "StopRun", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AThirdCharacter_StopRun_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AThirdCharacter_StopRun_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AThirdCharacter_StopRun()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AThirdCharacter_StopRun_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -203,10 +331,14 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ThirdPersonToyPrj,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AThirdCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AThirdCharacter_DoCrouch, "DoCrouch" }, // 958039098
 		{ &Z_Construct_UFunction_AThirdCharacter_MoveForward, "MoveForward" }, // 3209732552
 		{ &Z_Construct_UFunction_AThirdCharacter_MoveRight, "MoveRight" }, // 2698489490
+		{ &Z_Construct_UFunction_AThirdCharacter_Run, "Run" }, // 2521673265
 		{ &Z_Construct_UFunction_AThirdCharacter_StartJump, "StartJump" }, // 11070546
+		{ &Z_Construct_UFunction_AThirdCharacter_StopCrouch, "StopCrouch" }, // 3546483046
 		{ &Z_Construct_UFunction_AThirdCharacter_StopJump, "StopJump" }, // 2386904030
+		{ &Z_Construct_UFunction_AThirdCharacter_StopRun, "StopRun" }, // 2995518648
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AThirdCharacter_Statics::Class_MetaDataParams[] = {
@@ -266,7 +398,7 @@ void EmptyLinkFunctionForGeneratedCodeThirdCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AThirdCharacter, 4060464697);
+	IMPLEMENT_CLASS(AThirdCharacter, 2334644223);
 	template<> THIRDPERSONTOYPRJ_API UClass* StaticClass<AThirdCharacter>()
 	{
 		return AThirdCharacter::StaticClass();

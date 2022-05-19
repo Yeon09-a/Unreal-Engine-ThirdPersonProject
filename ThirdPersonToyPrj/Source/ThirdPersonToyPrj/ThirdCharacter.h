@@ -42,6 +42,22 @@ public:
 	UFUNCTION()
 	void StopJump();
 
+	// 달리기 속도 올리기
+	UFUNCTION()
+	void Run();
+
+	// 달리기 속도 원래대로 바꾸기
+	UFUNCTION()
+	void StopRun();
+
+	// 앉기
+	UFUNCTION()
+	void DoCrouch();
+
+	// 앉은 상태 벗어나기(일어나기)
+	UFUNCTION()
+	void StopCrouch();
+
 	// 카메라 지지대
 	UPROPERTY(EditAnywhere, Category = camera)
 	class USpringArmComponent* SpringArm;
