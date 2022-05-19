@@ -1,12 +1,17 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\GitHub\Unreal-Engine-ThirdPersonProject).
+  Parsing headers for ThirdPersonToyPrjEditor
+    Running UnrealHeaderTool "E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\ThirdPersonToyPrj.uproject" "E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\ThirdPersonToyPrjEditor\Development\ThirdPersonToyPrjEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\김연아\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for ThirdPersonToyPrjEditor in 5.6258341 seconds
   Building ThirdPersonToyPrjEditor...
   Using Visual Studio 2019 14.29.30137 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 12 processes...
-    [1/4] ThirdCharacter.cpp
-    [2/4] UE4Editor-ThirdPersonToyPrj-0050.lib
-       E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\UE4Editor-ThirdPersonToyPrj-0050.lib 라이브러리 및 E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\UE4Editor-ThirdPersonToyPrj-0050.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-ThirdPersonToyPrj-0050.dll
-       E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\UE4Editor-ThirdPersonToyPrj-0050.suppressed.lib 라이브러리 및 E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\UE4Editor-ThirdPersonToyPrj-0050.suppressed.exp 개체를 생성하고 있습니다.
-    [4/4] ThirdPersonToyPrjEditor.target
-  Total time in Parallel executor: 3.64 seconds
-  Total execution time: 5.15 seconds
+  Building 6 actions with 12 processes...
+    [1/6] ThirdPersonToyPrj.init.gen.cpp
+    [2/6] ThirdCharacter.gen.cpp
+    [3/6] ThirdCharacter.cpp
+    [4/6] UE4Editor-ThirdPersonToyPrj-0056.lib
+       E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\UE4Editor-ThirdPersonToyPrj-0056.lib 라이브러리 및 E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\UE4Editor-ThirdPersonToyPrj-0056.exp 개체를 생성하고 있습니다.
+    [5/6] UE4Editor-ThirdPersonToyPrj-0056.dll
+       E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\UE4Editor-ThirdPersonToyPrj-0056.suppressed.lib 라이브러리 및 E:\GitHub\Unreal-Engine-ThirdPersonProject\ThirdPersonToyPrj\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonToyPrj\UE4Editor-ThirdPersonToyPrj-0056.suppressed.exp 개체를 생성하고 있습니다.
+    [6/6] ThirdPersonToyPrjEditor.target
+  Total time in Parallel executor: 2.73 seconds
+  Total execution time: 9.67 seconds

@@ -57,6 +57,14 @@ void AThirdCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	// action 바인딩 구성
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AThirdCharacter::StartJump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AThirdCharacter::StopJump);
+
+	// Run 바인딩 구성
+	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &AThirdCharacter::Run);
+	PlayerInputComponent->BindAction("Run", IE_Released, this, &AThirdCharacter::StopRun);
+
+	// Crouch 바인딩 구성
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AThirdCharacter::DoCrouch);
+	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &AThirdCharacter::StopCrouch);
 }
 
 void AThirdCharacter::MoveForward(float Value)
@@ -82,4 +90,24 @@ void AThirdCharacter::StartJump()
 void AThirdCharacter::StopJump()
 {
 	bPressedJump = false;
+}
+
+void AThirdCharacter::Run()
+{
+	GetCharacterMovement()->MaxWalkSpeed *= 2;
+}
+
+void AThirdCharacter::StopRun()
+{
+	GetCharacterMovement()->MaxWalkSpeed /= 2;
+}
+
+void AThirdCharacter::DoCrouch()
+{
+	Crouch();
+}
+
+void AThirdCharacter::StopCrouch()
+{
+	UnCrouch();
 }
