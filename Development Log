@@ -19,3 +19,12 @@
 % 헤매던 부분 해결한 방법(기억하기, 중요!)
 * 캐릭터 블루프린트의 컴포넌트 부분의 BP_ThirdCharacter(self)의 UseControllerRotationYaw 체크 해제할 것.
 * JumpStart->JumpLoop, JumpEnd->Idle,Walk에 Automatic Rule Based On Sequence Player in State 체크할 것.
+
+2022.05.19 Tur
+캐릭터 달리기, 웅크리기 구현
+- 캐릭터 달리기 추가(애니메이션 포함)
+- 캐릭터 Idle, Walk, Run 블렌드
+- 캐릭터 웅크리기 추가(애니메이션 포함)
+
+% 헤매던 부분 해결한 방법(기억하기, 중요!)
+* crouch 사용 시 Movement 컴포넌트의 CanCrouch 체크할 것.
