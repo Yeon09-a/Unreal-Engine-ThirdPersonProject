@@ -84,21 +84,7 @@ void AThirdCharacter::MoveRight(float Value)
 
 void AThirdCharacter::StartJump()
 {
-	if (GetCharacterMovement()->IsFalling() && GetCharacterMovement()->GetMovementName() != "Flying")
-	{
-		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
-		GetCharacterMovement()->bCheatFlying = true;
-
-	}
-	else if (GetCharacterMovement()->GetMovementName() == "Flying")
-	{
-		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
-		GetCharacterMovement()->bCheatFlying = false;
-	}
-	else
-	{
-		bPressedJump = true;
-	}
+	bPressedJump = true;
 }
 
 void AThirdCharacter::StopJump()
